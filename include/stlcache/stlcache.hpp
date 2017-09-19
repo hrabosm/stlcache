@@ -35,6 +35,9 @@ using namespace std;
 #include <stlcache/lock_exclusive.hpp>
 #include <stlcache/lock_shared.hpp>
 #include <stlcache/policy_lfu_multi.hpp>
+#include <stlcache/policy_lfustar_multi.hpp>
+#include <stlcache/policy_lfuaging_multi.hpp>
+#include <stlcache/policy_lfuagingstar_multi.hpp>
 
 namespace stlcache {
 

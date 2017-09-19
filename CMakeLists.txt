@@ -90,4 +90,16 @@ ADD_EXECUTABLE(test_lfu_multi tests/test_lfu_multi.cpp)
 target_link_libraries(test_lfu_multi ${LIBS})
 ADD_TEST(LFU-MultiIndex test_lfu_multi)
 
+ADD_EXECUTABLE(test_lfuaging_multi tests/test_lfuaging_multi.cpp)
+target_link_libraries(test_lfuaging_multi ${LIBS})
+ADD_TEST(LFUAging-MultiIndex test_lfuaging_multi)
+
+ADD_EXECUTABLE(test_lfustar_multi tests/test_lfustar_multi.cpp)
+target_link_libraries(test_lfustar_multi ${LIBS})
+ADD_TEST(LFUStar-MultiIndex test_lfustar_multi)
+
+ADD_EXECUTABLE(test_lfuagingstar_multi tests/test_lfuagingstar_multi.cpp)
+target_link_libraries(test_lfuagingstar_multi ${LIBS})
+ADD_TEST(LFUAgingStar-MultiIndex test_lfuagingstar_multi)
+
 endif(Boost_FOUND)
